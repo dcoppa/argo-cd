@@ -211,7 +211,7 @@ func NewClient(opts *ClientOptions) (Client, error) {
 		if opts.KubeOverrides == nil {
 			opts.KubeOverrides = &clientcmd.ConfigOverrides{}
 		}
-		serverPodLabelSelector := common.LabelKeyAppName + "=" + opts.ServerName
+		serverPodLabelSelector := common.LabelKeyAppName + "=argocd-server"
 		port, err := kube.PortForward(8080, opts.PortForwardNamespace, opts.KubeOverrides, serverPodLabelSelector)
 		if err != nil {
 			return nil, err

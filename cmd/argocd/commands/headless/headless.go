@@ -116,7 +116,7 @@ func (c *forwardRepoClientset) NewRepoServerClient() (io.Closer, repoapiclient.R
 		overrides := clientcmd.ConfigOverrides{
 			CurrentContext: c.context,
 		}
-		repoServerPodLabelSelector := common.LabelKeyAppName + "=" + c.repoServerName
+		repoServerPodLabelSelector := common.LabelKeyAppName + "=argocd-repo-server"
 		repoServerPort, err := kubeutil.PortForward(8081, c.namespace, &overrides, repoServerPodLabelSelector)
 		if err != nil {
 			c.err = err

@@ -3,9 +3,9 @@ package project
 import (
 	"context"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient/project"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient/project"
 
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
 )
 
 // this implements the "then" part of given/when/then

@@ -11,9 +11,9 @@ import (
 	log "github.com/sirupsen/logrus"
 	"sigs.k8s.io/yaml"
 
-	"github.com/argoproj/argo-cd/v2/util/config"
-	executil "github.com/argoproj/argo-cd/v2/util/exec"
-	pathutil "github.com/argoproj/argo-cd/v2/util/io/path"
+	"github.com/dcoppa/argo-cd/v2/util/config"
+	executil "github.com/dcoppa/argo-cd/v2/util/exec"
+	pathutil "github.com/dcoppa/argo-cd/v2/util/io/path"
 )
 
 const (

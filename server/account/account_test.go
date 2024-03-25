@@ -13,16 +13,16 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/fake"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient/account"
-	sessionpkg "github.com/argoproj/argo-cd/v2/pkg/apiclient/session"
-	"github.com/argoproj/argo-cd/v2/server/session"
-	"github.com/argoproj/argo-cd/v2/test"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/password"
-	"github.com/argoproj/argo-cd/v2/util/rbac"
-	sessionutil "github.com/argoproj/argo-cd/v2/util/session"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient/account"
+	sessionpkg "github.com/dcoppa/argo-cd/v2/pkg/apiclient/session"
+	"github.com/dcoppa/argo-cd/v2/server/session"
+	"github.com/dcoppa/argo-cd/v2/test"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/password"
+	"github.com/dcoppa/argo-cd/v2/util/rbac"
+	sessionutil "github.com/dcoppa/argo-cd/v2/util/session"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 const (

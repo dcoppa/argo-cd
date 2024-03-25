@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 
 	"k8s.io/apimachinery/pkg/util/intstr"
 )

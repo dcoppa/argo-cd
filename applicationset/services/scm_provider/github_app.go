@@ -1,8 +1,8 @@
 package scm_provider
 
 import (
-	"github.com/argoproj/argo-cd/v2/applicationset/services/github_app_auth"
-	"github.com/argoproj/argo-cd/v2/applicationset/services/internal/github_app"
+	"github.com/dcoppa/argo-cd/v2/applicationset/services/github_app_auth"
+	"github.com/dcoppa/argo-cd/v2/applicationset/services/internal/github_app"
 )
 
 func NewGithubAppProviderFor(g github_app_auth.Authentication, organization string, url string, allBranches bool) (*GithubProvider, error) {

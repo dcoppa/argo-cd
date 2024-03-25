@@ -24,17 +24,17 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"sigs.k8s.io/yaml"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient"
-	sessionpkg "github.com/argoproj/argo-cd/v2/pkg/apiclient/session"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned"
-	"github.com/argoproj/argo-cd/v2/util/env"
-	. "github.com/argoproj/argo-cd/v2/util/errors"
-	grpcutil "github.com/argoproj/argo-cd/v2/util/grpc"
-	"github.com/argoproj/argo-cd/v2/util/io"
-	"github.com/argoproj/argo-cd/v2/util/rand"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient"
+	sessionpkg "github.com/dcoppa/argo-cd/v2/pkg/apiclient/session"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned"
+	"github.com/dcoppa/argo-cd/v2/util/env"
+	. "github.com/dcoppa/argo-cd/v2/util/errors"
+	grpcutil "github.com/dcoppa/argo-cd/v2/util/grpc"
+	"github.com/dcoppa/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/util/rand"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 const (

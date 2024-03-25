@@ -3,8 +3,8 @@ package diff
 import (
 	"fmt"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/glob"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/glob"
 )
 
 // IgnoreDiffConfig holds the ignore difference configurations defined in argo-cm

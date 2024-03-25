@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	azureMock "github.com/argoproj/argo-cd/v2/applicationset/services/scm_provider/azure_devops/git/mocks"
+	azureMock "github.com/dcoppa/argo-cd/v2/applicationset/services/scm_provider/azure_devops/git/mocks"
 )
 
 func createBoolPtr(x bool) *bool {

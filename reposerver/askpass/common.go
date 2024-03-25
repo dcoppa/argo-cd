@@ -1,7 +1,7 @@
 package askpass
 
 import (
-	"github.com/argoproj/argo-cd/v2/util/env"
+	"github.com/dcoppa/argo-cd/v2/util/env"
 )
 
 var (

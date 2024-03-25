@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	util "github.com/argoproj/argo-cd/v2/util/io"
-	"github.com/argoproj/argo-cd/v2/util/session"
+	util "github.com/dcoppa/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/util/session"
 )
 
 func TestRateLimiter(t *testing.T) {

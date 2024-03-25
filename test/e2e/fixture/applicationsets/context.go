@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture/applicationsets/utils"
-	. "github.com/argoproj/argo-cd/v2/test/e2e/fixture/applicationsets/utils"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture/applicationsets/utils"
+	. "github.com/dcoppa/argo-cd/v2/test/e2e/fixture/applicationsets/utils"
 )
 
 // Context implements the "given" part of given/when/then

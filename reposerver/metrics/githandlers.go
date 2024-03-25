@@ -7,8 +7,8 @@ import (
 
 	"golang.org/x/sync/semaphore"
 
-	"github.com/argoproj/argo-cd/v2/util/env"
-	"github.com/argoproj/argo-cd/v2/util/git"
+	"github.com/dcoppa/argo-cd/v2/util/env"
+	"github.com/dcoppa/argo-cd/v2/util/git"
 )
 
 var (

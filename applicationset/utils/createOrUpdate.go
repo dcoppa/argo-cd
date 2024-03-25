@@ -17,9 +17,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	argov1alpha1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/argo"
-	argodiff "github.com/argoproj/argo-cd/v2/util/argo/diff"
+	argov1alpha1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/argo"
+	argodiff "github.com/dcoppa/argo-cd/v2/util/argo/diff"
 )
 
 // CreateOrUpdate overrides "sigs.k8s.io/controller-runtime" function

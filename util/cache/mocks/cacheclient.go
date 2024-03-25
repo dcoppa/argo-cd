@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	cache "github.com/argoproj/argo-cd/v2/util/cache"
+	cache "github.com/dcoppa/argo-cd/v2/util/cache"
 	"github.com/stretchr/testify/mock"
 )
 

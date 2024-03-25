@@ -4,26 +4,26 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/argoproj/argo-cd/v2/util/templates"
+	"github.com/dcoppa/argo-cd/v2/util/templates"
 	"os"
 	"strconv"
 	"text/tabwriter"
 
-	"github.com/argoproj/argo-cd/v2/cmd/util"
+	"github.com/dcoppa/argo-cd/v2/cmd/util"
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"k8s.io/utils/pointer"
 	"sigs.k8s.io/yaml"
 
-	"github.com/argoproj/argo-cd/v2/cmd/argocd/commands/headless"
-	argocdclient "github.com/argoproj/argo-cd/v2/pkg/apiclient"
-	applicationpkg "github.com/argoproj/argo-cd/v2/pkg/apiclient/application"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application"
-	v1alpha1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/argo"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/cmd/argocd/commands/headless"
+	argocdclient "github.com/dcoppa/argo-cd/v2/pkg/apiclient"
+	applicationpkg "github.com/dcoppa/argo-cd/v2/pkg/apiclient/application"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application"
+	v1alpha1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/argo"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/io"
 )
 
 type DisplayedAction struct {

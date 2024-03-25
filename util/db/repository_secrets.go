@@ -12,9 +12,9 @@ import (
 	apierr "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	appsv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/git"
+	"github.com/dcoppa/argo-cd/v2/common"
+	appsv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/git"
 )
 
 var _ repositoryBackend = &secretsRepositoryBackend{}

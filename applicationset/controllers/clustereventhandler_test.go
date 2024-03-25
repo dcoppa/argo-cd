@@ -14,8 +14,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client/fake"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	"github.com/argoproj/argo-cd/v2/applicationset/generators"
-	argov1alpha1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/applicationset/generators"
+	argov1alpha1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 )
 
 func TestClusterEventHandler(t *testing.T) {

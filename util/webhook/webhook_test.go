@@ -21,21 +21,21 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	kubetesting "k8s.io/client-go/testing"
 
-	"github.com/argoproj/argo-cd/v2/util/cache/appstate"
+	"github.com/dcoppa/argo-cd/v2/util/cache/appstate"
 
-	"github.com/argoproj/argo-cd/v2/util/db/mocks"
+	"github.com/dcoppa/argo-cd/v2/util/db/mocks"
 
-	servercache "github.com/argoproj/argo-cd/v2/server/cache"
+	servercache "github.com/dcoppa/argo-cd/v2/server/cache"
 
 	"github.com/sirupsen/logrus/hooks/test"
 	"github.com/stretchr/testify/assert"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned/fake"
-	"github.com/argoproj/argo-cd/v2/reposerver/cache"
-	cacheutil "github.com/argoproj/argo-cd/v2/util/cache"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned/fake"
+	"github.com/dcoppa/argo-cd/v2/reposerver/cache"
+	cacheutil "github.com/dcoppa/argo-cd/v2/util/cache"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 type fakeSettingsSrc struct {

@@ -10,7 +10,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	cdcommon "github.com/argoproj/argo-cd/v2/common"
+	cdcommon "github.com/dcoppa/argo-cd/v2/common"
 
 	"github.com/argoproj/gitops-engine/pkg/sync"
 	"github.com/argoproj/gitops-engine/pkg/sync/common"
@@ -23,14 +23,14 @@ import (
 	"k8s.io/apimachinery/pkg/util/managedfields"
 	"k8s.io/kubectl/pkg/util/openapi"
 
-	"github.com/argoproj/argo-cd/v2/controller/metrics"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	listersv1alpha1 "github.com/argoproj/argo-cd/v2/pkg/client/listers/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/argo"
-	"github.com/argoproj/argo-cd/v2/util/argo/diff"
-	logutils "github.com/argoproj/argo-cd/v2/util/log"
-	"github.com/argoproj/argo-cd/v2/util/lua"
-	"github.com/argoproj/argo-cd/v2/util/rand"
+	"github.com/dcoppa/argo-cd/v2/controller/metrics"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	listersv1alpha1 "github.com/dcoppa/argo-cd/v2/pkg/client/listers/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/argo"
+	"github.com/dcoppa/argo-cd/v2/util/argo/diff"
+	logutils "github.com/dcoppa/argo-cd/v2/util/log"
+	"github.com/dcoppa/argo-cd/v2/util/lua"
+	"github.com/dcoppa/argo-cd/v2/util/rand"
 )
 
 var syncIdPrefix uint64 = 0

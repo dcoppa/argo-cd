@@ -12,11 +12,11 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	executil "github.com/argoproj/argo-cd/v2/util/exec"
-	argoio "github.com/argoproj/argo-cd/v2/util/io"
-	pathutil "github.com/argoproj/argo-cd/v2/util/io/path"
-	"github.com/argoproj/argo-cd/v2/util/proxy"
+	"github.com/dcoppa/argo-cd/v2/common"
+	executil "github.com/dcoppa/argo-cd/v2/util/exec"
+	argoio "github.com/dcoppa/argo-cd/v2/util/io"
+	pathutil "github.com/dcoppa/argo-cd/v2/util/io/path"
+	"github.com/dcoppa/argo-cd/v2/util/proxy"
 )
 
 // A thin wrapper around the "helm" command, adding logging and error translation.

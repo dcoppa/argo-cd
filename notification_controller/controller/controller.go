@@ -6,19 +6,19 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/argoproj/argo-cd/v2/util/glob"
+	"github.com/dcoppa/argo-cd/v2/util/glob"
 
-	"github.com/argoproj/argo-cd/v2/util/notification/k8s"
+	"github.com/dcoppa/argo-cd/v2/util/notification/k8s"
 
-	service "github.com/argoproj/argo-cd/v2/util/notification/argocd"
+	service "github.com/dcoppa/argo-cd/v2/util/notification/argocd"
 
-	argocert "github.com/argoproj/argo-cd/v2/util/cert"
+	argocert "github.com/dcoppa/argo-cd/v2/util/cert"
 
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/argoproj/argo-cd/v2/util/notification/settings"
+	"github.com/dcoppa/argo-cd/v2/util/notification/settings"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application"
 	"github.com/argoproj/notifications-engine/pkg/api"
 	"github.com/argoproj/notifications-engine/pkg/controller"
 	"github.com/argoproj/notifications-engine/pkg/services"

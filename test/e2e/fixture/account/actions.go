@@ -1,7 +1,7 @@
 package project
 
 import (
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
 )
 
 // this implements the "when" part of given/when/then

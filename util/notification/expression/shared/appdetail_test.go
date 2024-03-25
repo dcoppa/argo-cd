@@ -1,8 +1,8 @@
 package shared
 
 import (
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

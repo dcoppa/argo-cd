@@ -13,16 +13,16 @@ import (
 
 	"encoding/json"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/argoproj/argo-cd/v2/util/db"
-	"github.com/argoproj/argo-cd/v2/util/env"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/util/env"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 	log "github.com/sirupsen/logrus"
 	kubeerrors "k8s.io/apimachinery/pkg/api/errors"
 )

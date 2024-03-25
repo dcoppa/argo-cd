@@ -16,10 +16,10 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"sigs.k8s.io/yaml"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application"
-	"github.com/argoproj/argo-cd/v2/util/cli"
-	"github.com/argoproj/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application"
+	"github.com/dcoppa/argo-cd/v2/util/cli"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
 )
 
 // NewExportCommand defines a new command for exporting Kubernetes and Argo CD resources.

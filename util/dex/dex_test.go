@@ -13,7 +13,7 @@ import (
 	"sigs.k8s.io/yaml"
 
 	// "github.com/argoproj/argo-cd/common"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 const invalidURL = ":://localhost/foo/bar"

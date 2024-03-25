@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	testutil "github.com/argoproj/argo-cd/v2/test"
-	"github.com/argoproj/argo-cd/v2/util/test"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	testutil "github.com/dcoppa/argo-cd/v2/test"
+	"github.com/dcoppa/argo-cd/v2/util/test"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

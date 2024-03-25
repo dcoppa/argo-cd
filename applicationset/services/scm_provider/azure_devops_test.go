@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/mock"
 	"k8s.io/utils/pointer"
 
-	azureMock "github.com/argoproj/argo-cd/v2/applicationset/services/scm_provider/azure_devops/git/mocks"
+	azureMock "github.com/dcoppa/argo-cd/v2/applicationset/services/scm_provider/azure_devops/git/mocks"
 	"github.com/microsoft/azure-devops-go-api/azuredevops"
 	azureGit "github.com/microsoft/azure-devops-go-api/azuredevops/git"
 )

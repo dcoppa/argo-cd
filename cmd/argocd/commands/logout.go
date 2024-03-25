@@ -7,9 +7,9 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	argocdclient "github.com/argoproj/argo-cd/v2/pkg/apiclient"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/localconfig"
+	argocdclient "github.com/dcoppa/argo-cd/v2/pkg/apiclient"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/localconfig"
 )
 
 // NewLogoutCommand returns a new instance of `argocd logout` command

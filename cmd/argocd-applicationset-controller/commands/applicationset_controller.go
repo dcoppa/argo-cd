@@ -11,17 +11,17 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/v2/util/tls"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/util/tls"
 
-	"github.com/argoproj/argo-cd/v2/applicationset/controllers"
-	"github.com/argoproj/argo-cd/v2/applicationset/generators"
-	"github.com/argoproj/argo-cd/v2/applicationset/utils"
-	"github.com/argoproj/argo-cd/v2/applicationset/webhook"
-	cmdutil "github.com/argoproj/argo-cd/v2/cmd/util"
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/util/env"
-	"github.com/argoproj/argo-cd/v2/util/github_app"
+	"github.com/dcoppa/argo-cd/v2/applicationset/controllers"
+	"github.com/dcoppa/argo-cd/v2/applicationset/generators"
+	"github.com/dcoppa/argo-cd/v2/applicationset/utils"
+	"github.com/dcoppa/argo-cd/v2/applicationset/webhook"
+	cmdutil "github.com/dcoppa/argo-cd/v2/cmd/util"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/util/env"
+	"github.com/dcoppa/argo-cd/v2/util/github_app"
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
@@ -31,13 +31,13 @@ import (
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/argoproj/argo-cd/v2/applicationset/services"
-	appv1alpha1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned"
-	"github.com/argoproj/argo-cd/v2/util/cli"
-	"github.com/argoproj/argo-cd/v2/util/db"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	argosettings "github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/applicationset/services"
+	appv1alpha1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned"
+	"github.com/dcoppa/argo-cd/v2/util/cli"
+	"github.com/dcoppa/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	argosettings "github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 var gitSubmoduleEnabled = env.ParseBoolFromEnv(common.EnvGitSubmoduleEnabled, true)

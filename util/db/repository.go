@@ -10,9 +10,9 @@ import (
 	"google.golang.org/grpc/status"
 	apiv1 "k8s.io/api/core/v1"
 
-	appsv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	appv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	appsv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	appv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 const (

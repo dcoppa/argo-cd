@@ -15,11 +15,11 @@ import (
 
 	clustercache "github.com/argoproj/gitops-engine/pkg/cache"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	statecache "github.com/argoproj/argo-cd/v2/controller/cache"
-	"github.com/argoproj/argo-cd/v2/controller/sharding"
+	"github.com/dcoppa/argo-cd/v2/common"
+	statecache "github.com/dcoppa/argo-cd/v2/controller/cache"
+	"github.com/dcoppa/argo-cd/v2/controller/sharding"
 
-	dbmocks "github.com/argoproj/argo-cd/v2/util/db/mocks"
+	dbmocks "github.com/dcoppa/argo-cd/v2/util/db/mocks"
 	"github.com/argoproj/gitops-engine/pkg/cache/mocks"
 	synccommon "github.com/argoproj/gitops-engine/pkg/sync/common"
 	"github.com/argoproj/gitops-engine/pkg/utils/kube"
@@ -36,15 +36,15 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"sigs.k8s.io/yaml"
 
-	mockstatecache "github.com/argoproj/argo-cd/v2/controller/cache/mocks"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned/fake"
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	mockrepoclient "github.com/argoproj/argo-cd/v2/reposerver/apiclient/mocks"
-	"github.com/argoproj/argo-cd/v2/test"
-	cacheutil "github.com/argoproj/argo-cd/v2/util/cache"
-	appstatecache "github.com/argoproj/argo-cd/v2/util/cache/appstate"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	mockstatecache "github.com/dcoppa/argo-cd/v2/controller/cache/mocks"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned/fake"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	mockrepoclient "github.com/dcoppa/argo-cd/v2/reposerver/apiclient/mocks"
+	"github.com/dcoppa/argo-cd/v2/test"
+	cacheutil "github.com/dcoppa/argo-cd/v2/util/cache"
+	appstatecache "github.com/dcoppa/argo-cd/v2/util/cache/appstate"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 type namespacedResource struct {

@@ -3,15 +3,15 @@ package service
 import (
 	"context"
 
-	"github.com/argoproj/argo-cd/v2/util/notification/expression/shared"
+	"github.com/dcoppa/argo-cd/v2/util/notification/expression/shared"
 
 	log "github.com/sirupsen/logrus"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/v2/util/db"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 //go:generate mockgen -destination=./mocks/service.go -package=mocks github.com/argoproj-labs/argocd-notifications/shared/argocd Service

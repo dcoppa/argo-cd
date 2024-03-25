@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/argoproj/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/common"
 )
 
 // ParseSecretKey retrieves secret appSetName if different from common ArgoCDSecretName.

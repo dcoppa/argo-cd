@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/argoproj/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/common"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/net/proxy"
 	"google.golang.org/grpc"

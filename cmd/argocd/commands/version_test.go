@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	argocdclient "github.com/argoproj/argo-cd/v2/pkg/apiclient"
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient/version"
+	argocdclient "github.com/dcoppa/argo-cd/v2/pkg/apiclient"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient/version"
 	"github.com/stretchr/testify/assert"
 )
 

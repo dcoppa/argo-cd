@@ -22,10 +22,10 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned"
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture"
-	"github.com/argoproj/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
 )
 
 type ExternalNamespace string

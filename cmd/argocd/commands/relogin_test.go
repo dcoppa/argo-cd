@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	argocdclient "github.com/argoproj/argo-cd/v2/pkg/apiclient"
+	argocdclient "github.com/dcoppa/argo-cd/v2/pkg/apiclient"
 )
 
 func TestNewReloginCommand(t *testing.T) {

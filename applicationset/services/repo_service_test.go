@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/argoproj/argo-cd/v2/applicationset/services/mocks"
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	repo_mocks "github.com/argoproj/argo-cd/v2/reposerver/apiclient/mocks"
-	db_mocks "github.com/argoproj/argo-cd/v2/util/db/mocks"
-	"github.com/argoproj/argo-cd/v2/util/git"
+	"github.com/dcoppa/argo-cd/v2/applicationset/services/mocks"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	repo_mocks "github.com/dcoppa/argo-cd/v2/reposerver/apiclient/mocks"
+	db_mocks "github.com/dcoppa/argo-cd/v2/util/db/mocks"
+	"github.com/dcoppa/argo-cd/v2/util/git"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 )
 
 func TestGetDirectories(t *testing.T) {

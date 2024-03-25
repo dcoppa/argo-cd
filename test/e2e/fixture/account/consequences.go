@@ -4,12 +4,12 @@ import (
 	"context"
 	"errors"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient/session"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient/session"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient/account"
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture"
-	. "github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient/account"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
+	. "github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/io"
 )
 
 // this implements the "then" part of given/when/then

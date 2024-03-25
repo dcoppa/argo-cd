@@ -9,12 +9,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/argoproj/argo-cd/v2/cmd/argocd/commands/headless"
-	argocdclient "github.com/argoproj/argo-cd/v2/pkg/apiclient"
-	projectpkg "github.com/argoproj/argo-cd/v2/pkg/apiclient/project"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/cmd/argocd/commands/headless"
+	argocdclient "github.com/dcoppa/argo-cd/v2/pkg/apiclient"
+	projectpkg "github.com/dcoppa/argo-cd/v2/pkg/apiclient/project"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/io"
 )
 
 // NewProjectWindowsCommand returns a new instance of the `argocd proj windows` command

@@ -20,17 +20,17 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/pkg/client/listers/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/server/rbacpolicy"
-	"github.com/argoproj/argo-cd/v2/util/cache/appstate"
-	"github.com/argoproj/argo-cd/v2/util/dex"
-	"github.com/argoproj/argo-cd/v2/util/env"
-	httputil "github.com/argoproj/argo-cd/v2/util/http"
-	jwtutil "github.com/argoproj/argo-cd/v2/util/jwt"
-	oidcutil "github.com/argoproj/argo-cd/v2/util/oidc"
-	passwordutil "github.com/argoproj/argo-cd/v2/util/password"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/pkg/client/listers/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/server/rbacpolicy"
+	"github.com/dcoppa/argo-cd/v2/util/cache/appstate"
+	"github.com/dcoppa/argo-cd/v2/util/dex"
+	"github.com/dcoppa/argo-cd/v2/util/env"
+	httputil "github.com/dcoppa/argo-cd/v2/util/http"
+	jwtutil "github.com/dcoppa/argo-cd/v2/util/jwt"
+	oidcutil "github.com/dcoppa/argo-cd/v2/util/oidc"
+	passwordutil "github.com/dcoppa/argo-cd/v2/util/password"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 // SessionManager generates and validates JWT tokens for login sessions.

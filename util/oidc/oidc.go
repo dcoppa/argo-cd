@@ -20,16 +20,16 @@ import (
 	log "github.com/sirupsen/logrus"
 	"golang.org/x/oauth2"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/server/settings/oidc"
-	"github.com/argoproj/argo-cd/v2/util/cache"
-	"github.com/argoproj/argo-cd/v2/util/crypto"
-	"github.com/argoproj/argo-cd/v2/util/dex"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/server/settings/oidc"
+	"github.com/dcoppa/argo-cd/v2/util/cache"
+	"github.com/dcoppa/argo-cd/v2/util/crypto"
+	"github.com/dcoppa/argo-cd/v2/util/dex"
 
-	httputil "github.com/argoproj/argo-cd/v2/util/http"
-	jwtutil "github.com/argoproj/argo-cd/v2/util/jwt"
-	"github.com/argoproj/argo-cd/v2/util/rand"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	httputil "github.com/dcoppa/argo-cd/v2/util/http"
+	jwtutil "github.com/dcoppa/argo-cd/v2/util/jwt"
+	"github.com/dcoppa/argo-cd/v2/util/rand"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 var InvalidRedirectURLError = fmt.Errorf("invalid return URL")

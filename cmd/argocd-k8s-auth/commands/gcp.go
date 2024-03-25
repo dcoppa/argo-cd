@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/oauth2/google"
 
-	"github.com/argoproj/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
 )
 
 var (

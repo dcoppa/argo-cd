@@ -11,7 +11,7 @@ import (
 
 	v12 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/argoproj/argo-cd/v2/util/helm"
+	"github.com/dcoppa/argo-cd/v2/util/helm"
 
 	"gopkg.in/yaml.v2"
 
@@ -23,9 +23,9 @@ import (
 
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/argoproj/argo-cd/v2/hack/gen-resources/util"
-	argoappv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/hack/gen-resources/util"
+	argoappv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/db"
 )
 
 const POD_PREFIX = "vcluster"

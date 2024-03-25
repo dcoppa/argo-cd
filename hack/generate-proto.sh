@@ -27,7 +27,7 @@ export GO111MODULE=off
 # --apimachinery-packages= option so that go-to-protobuf can locate the types, but prefixed with a
 # '-' so that go-to-protobuf will not generate .proto files for it.
 PACKAGES=(
-    github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1
+    github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1
 )
 APIMACHINERY_PKGS=(
     +k8s.io/apimachinery/pkg/util/intstr

@@ -11,12 +11,12 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/argoproj/argo-cd/v2/cmd/argocd/commands/headless"
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient/account"
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient/session"
-	. "github.com/argoproj/argo-cd/v2/test/e2e/fixture"
-	accountFixture "github.com/argoproj/argo-cd/v2/test/e2e/fixture/account"
-	"github.com/argoproj/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/cmd/argocd/commands/headless"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient/account"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient/session"
+	. "github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
+	accountFixture "github.com/dcoppa/argo-cd/v2/test/e2e/fixture/account"
+	"github.com/dcoppa/argo-cd/v2/util/io"
 )
 
 func TestCreateAndUseAccount(t *testing.T) {

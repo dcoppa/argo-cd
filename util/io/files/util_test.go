@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/argoproj/argo-cd/v2/util/io/files"
+	"github.com/dcoppa/argo-cd/v2/util/io/files"
 )
 
 func TestRelativePath(t *testing.T) {

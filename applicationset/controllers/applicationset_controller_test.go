@@ -31,15 +31,15 @@ import (
 	"github.com/argoproj/gitops-engine/pkg/health"
 	"github.com/argoproj/gitops-engine/pkg/sync/common"
 
-	"github.com/argoproj/argo-cd/v2/applicationset/generators"
-	"github.com/argoproj/argo-cd/v2/applicationset/utils"
+	"github.com/dcoppa/argo-cd/v2/applicationset/generators"
+	"github.com/dcoppa/argo-cd/v2/applicationset/utils"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned/fake"
-	"github.com/argoproj/argo-cd/v2/util/collections"
-	dbmocks "github.com/argoproj/argo-cd/v2/util/db/mocks"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned/fake"
+	"github.com/dcoppa/argo-cd/v2/util/collections"
+	dbmocks "github.com/dcoppa/argo-cd/v2/util/db/mocks"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application"
 )
 
 type fakeStore struct {

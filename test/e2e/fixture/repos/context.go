@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture"
-	"github.com/argoproj/argo-cd/v2/util/env"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
+	"github.com/dcoppa/argo-cd/v2/util/env"
 )
 
 // this implements the "given" part of given/when/then

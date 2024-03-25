@@ -21,16 +21,16 @@ import (
 	log "github.com/sirupsen/logrus"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned"
-	"github.com/argoproj/argo-cd/v2/reposerver/cache"
-	servercache "github.com/argoproj/argo-cd/v2/server/cache"
-	"github.com/argoproj/argo-cd/v2/util/argo"
-	"github.com/argoproj/argo-cd/v2/util/db"
-	"github.com/argoproj/argo-cd/v2/util/glob"
-	"github.com/argoproj/argo-cd/v2/util/security"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned"
+	"github.com/dcoppa/argo-cd/v2/reposerver/cache"
+	servercache "github.com/dcoppa/argo-cd/v2/server/cache"
+	"github.com/dcoppa/argo-cd/v2/util/argo"
+	"github.com/dcoppa/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/util/glob"
+	"github.com/dcoppa/argo-cd/v2/util/security"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 type settingsSource interface {

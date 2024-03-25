@@ -5,19 +5,19 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/argoproj/argo-cd/v2/util/env"
+	"github.com/dcoppa/argo-cd/v2/util/env"
 	"github.com/argoproj/gitops-engine/pkg/cache"
 	"github.com/argoproj/gitops-engine/pkg/utils/kube"
 	log "github.com/sirupsen/logrus"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 
-	"github.com/argoproj/argo-cd/v2/controller/metrics"
-	appv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/pkg/client/listers/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/argo"
-	appstatecache "github.com/argoproj/argo-cd/v2/util/cache/appstate"
-	"github.com/argoproj/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/controller/metrics"
+	appv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/pkg/client/listers/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/argo"
+	appstatecache "github.com/dcoppa/argo-cd/v2/util/cache/appstate"
+	"github.com/dcoppa/argo-cd/v2/util/db"
 )
 
 const (

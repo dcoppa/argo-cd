@@ -7,7 +7,7 @@ import (
 	"github.com/bradleyfalzon/ghinstallation/v2"
 	"github.com/google/go-github/v35/github"
 
-	"github.com/argoproj/argo-cd/v2/applicationset/services/github_app_auth"
+	"github.com/dcoppa/argo-cd/v2/applicationset/services/github_app_auth"
 )
 
 // Client builds a github client for the given app authentication.

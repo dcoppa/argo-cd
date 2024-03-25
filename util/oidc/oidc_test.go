@@ -19,14 +19,14 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/oauth2"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/server/settings/oidc"
-	"github.com/argoproj/argo-cd/v2/util"
-	"github.com/argoproj/argo-cd/v2/util/cache"
-	"github.com/argoproj/argo-cd/v2/util/crypto"
-	"github.com/argoproj/argo-cd/v2/util/dex"
-	"github.com/argoproj/argo-cd/v2/util/settings"
-	"github.com/argoproj/argo-cd/v2/util/test"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/server/settings/oidc"
+	"github.com/dcoppa/argo-cd/v2/util"
+	"github.com/dcoppa/argo-cd/v2/util/cache"
+	"github.com/dcoppa/argo-cd/v2/util/crypto"
+	"github.com/dcoppa/argo-cd/v2/util/dex"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/util/test"
 )
 
 func TestInferGrantType(t *testing.T) {

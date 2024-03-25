@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/argoproj/argo-cd/v2/util/io/files"
+	"github.com/dcoppa/argo-cd/v2/util/io/files"
 )
 
 func Path(root, path string) (string, error) {

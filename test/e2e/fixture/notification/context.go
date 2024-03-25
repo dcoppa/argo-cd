@@ -3,7 +3,7 @@ package notification
 import (
 	"testing"
 
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
 )
 
 // this implements the "given" part of given/when/then

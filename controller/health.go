@@ -10,9 +10,9 @@ import (
 	log "github.com/sirupsen/logrus"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application"
-	appv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/lua"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application"
+	appv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/lua"
 )
 
 // setApplicationHealth updates the health statuses of all resources performed in the comparison

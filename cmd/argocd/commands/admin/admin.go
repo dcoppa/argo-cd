@@ -13,13 +13,13 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"sigs.k8s.io/yaml"
 
-	cmdutil "github.com/argoproj/argo-cd/v2/cmd/util"
-	"github.com/argoproj/argo-cd/v2/common"
-	argocdclient "github.com/argoproj/argo-cd/v2/pkg/apiclient"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	cmdutil "github.com/dcoppa/argo-cd/v2/cmd/util"
+	"github.com/dcoppa/argo-cd/v2/common"
+	argocdclient "github.com/dcoppa/argo-cd/v2/pkg/apiclient"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application"
 )
 
 const (

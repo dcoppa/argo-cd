@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/alicebob/miniredis/v2"
-	cacheutil "github.com/argoproj/argo-cd/v2/util/cache"
-	cacheutilmocks "github.com/argoproj/argo-cd/v2/util/cache/mocks"
+	cacheutil "github.com/dcoppa/argo-cd/v2/util/cache"
+	cacheutilmocks "github.com/dcoppa/argo-cd/v2/util/cache/mocks"
 	"github.com/redis/go-redis/v9"
 	"github.com/stretchr/testify/mock"
 )

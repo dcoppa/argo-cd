@@ -8,11 +8,11 @@ import (
 	log "github.com/sirupsen/logrus"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	client "github.com/argoproj/argo-cd/v2/pkg/apiclient/application"
-	. "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/grpc"
+	client "github.com/dcoppa/argo-cd/v2/pkg/apiclient/application"
+	. "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/grpc"
 )
 
 // this implements the "when" part of given/when/then

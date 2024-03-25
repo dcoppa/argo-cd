@@ -14,11 +14,11 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"sigs.k8s.io/yaml"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/server/rbacpolicy"
-	"github.com/argoproj/argo-cd/v2/util/assets"
-	"github.com/argoproj/argo-cd/v2/util/cli"
-	"github.com/argoproj/argo-cd/v2/util/rbac"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/server/rbacpolicy"
+	"github.com/dcoppa/argo-cd/v2/util/assets"
+	"github.com/dcoppa/argo-cd/v2/util/cli"
+	"github.com/dcoppa/argo-cd/v2/util/rbac"
 )
 
 // Provide a mapping of short-hand resource names to their RBAC counterparts

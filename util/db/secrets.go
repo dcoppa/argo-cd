@@ -20,7 +20,7 @@ import (
 	informerv1 "k8s.io/client-go/informers/core/v1"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/argoproj/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/common"
 )
 
 func (db *db) listSecretsByType(types ...string) ([]*apiv1.Secret, error) {

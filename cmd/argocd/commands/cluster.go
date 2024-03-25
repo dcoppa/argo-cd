@@ -14,17 +14,17 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/argoproj/argo-cd/v2/cmd/argocd/commands/headless"
-	cmdutil "github.com/argoproj/argo-cd/v2/cmd/util"
-	"github.com/argoproj/argo-cd/v2/common"
-	argocdclient "github.com/argoproj/argo-cd/v2/pkg/apiclient"
-	clusterpkg "github.com/argoproj/argo-cd/v2/pkg/apiclient/cluster"
-	argoappv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/cli"
-	"github.com/argoproj/argo-cd/v2/util/clusterauth"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/io"
-	"github.com/argoproj/argo-cd/v2/util/text/label"
+	"github.com/dcoppa/argo-cd/v2/cmd/argocd/commands/headless"
+	cmdutil "github.com/dcoppa/argo-cd/v2/cmd/util"
+	"github.com/dcoppa/argo-cd/v2/common"
+	argocdclient "github.com/dcoppa/argo-cd/v2/pkg/apiclient"
+	clusterpkg "github.com/dcoppa/argo-cd/v2/pkg/apiclient/cluster"
+	argoappv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/cli"
+	"github.com/dcoppa/argo-cd/v2/util/clusterauth"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/util/text/label"
 )
 
 const (

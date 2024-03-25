@@ -6,8 +6,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/argoproj/argo-cd/v2/applicationset/services/scm_provider/aws_codecommit/mocks"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/applicationset/services/scm_provider/aws_codecommit/mocks"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/codecommit"
 	"github.com/aws/aws-sdk-go/service/resourcegroupstaggingapi"

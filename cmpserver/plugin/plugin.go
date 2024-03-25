@@ -16,12 +16,12 @@ import (
 
 	"github.com/argoproj/pkg/rand"
 
-	"github.com/argoproj/argo-cd/v2/cmpserver/apiclient"
-	"github.com/argoproj/argo-cd/v2/common"
-	repoclient "github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/v2/util/buffered_context"
-	"github.com/argoproj/argo-cd/v2/util/cmp"
-	"github.com/argoproj/argo-cd/v2/util/io/files"
+	"github.com/dcoppa/argo-cd/v2/cmpserver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/common"
+	repoclient "github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/util/buffered_context"
+	"github.com/dcoppa/argo-cd/v2/util/cmp"
+	"github.com/dcoppa/argo-cd/v2/util/io/files"
 
 	"github.com/argoproj/gitops-engine/pkg/utils/kube"
 	"github.com/cyphar/filepath-securejoin"

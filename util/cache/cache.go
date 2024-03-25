@@ -13,9 +13,9 @@ import (
 	"github.com/redis/go-redis/v9"
 	"github.com/spf13/cobra"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	certutil "github.com/argoproj/argo-cd/v2/util/cert"
-	"github.com/argoproj/argo-cd/v2/util/env"
+	"github.com/dcoppa/argo-cd/v2/common"
+	certutil "github.com/dcoppa/argo-cd/v2/util/cert"
+	"github.com/dcoppa/argo-cd/v2/util/env"
 )
 
 const (

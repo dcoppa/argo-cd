@@ -6,15 +6,15 @@ import (
 	"os"
 	"strings"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
 
-	"github.com/argoproj/argo-cd/v2/util/env"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	service "github.com/argoproj/argo-cd/v2/util/notification/argocd"
-	"github.com/argoproj/argo-cd/v2/util/tls"
+	"github.com/dcoppa/argo-cd/v2/util/env"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	service "github.com/dcoppa/argo-cd/v2/util/notification/argocd"
+	"github.com/dcoppa/argo-cd/v2/util/tls"
 
-	notificationscontroller "github.com/argoproj/argo-cd/v2/notification_controller/controller"
+	notificationscontroller "github.com/dcoppa/argo-cd/v2/notification_controller/controller"
 
 	"github.com/argoproj/notifications-engine/pkg/controller"
 	"github.com/prometheus/client_golang/prometheus"

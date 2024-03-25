@@ -28,16 +28,16 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/argoproj/argo-cd/v2/controller/metrics"
-	"github.com/argoproj/argo-cd/v2/controller/sharding"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application"
-	appv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/argo"
-	"github.com/argoproj/argo-cd/v2/util/db"
-	"github.com/argoproj/argo-cd/v2/util/env"
-	logutils "github.com/argoproj/argo-cd/v2/util/log"
-	"github.com/argoproj/argo-cd/v2/util/lua"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/controller/metrics"
+	"github.com/dcoppa/argo-cd/v2/controller/sharding"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application"
+	appv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/argo"
+	"github.com/dcoppa/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/util/env"
+	logutils "github.com/dcoppa/argo-cd/v2/util/log"
+	"github.com/dcoppa/argo-cd/v2/util/lua"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 const (

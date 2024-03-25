@@ -11,7 +11,7 @@ import (
 
 	"github.com/spf13/cobra/doc"
 
-	"github.com/argoproj/argo-cd/v2/cmd/argocd/commands/admin"
+	"github.com/dcoppa/argo-cd/v2/cmd/argocd/commands/admin"
 
 	"github.com/argoproj/notifications-engine/pkg/services"
 	"github.com/argoproj/notifications-engine/pkg/triggers"

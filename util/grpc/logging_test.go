@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/grpc"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient/account"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient/account"
 )
 
 func Test_JSONLogging(t *testing.T) {

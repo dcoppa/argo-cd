@@ -10,8 +10,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	grpc_util "github.com/argoproj/argo-cd/v2/util/grpc"
-	"github.com/argoproj/argo-cd/v2/util/io"
+	grpc_util "github.com/dcoppa/argo-cd/v2/util/grpc"
+	"github.com/dcoppa/argo-cd/v2/util/io"
 )
 
 const (

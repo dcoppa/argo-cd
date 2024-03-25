@@ -6,14 +6,14 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	repositorypkg "github.com/argoproj/argo-cd/v2/pkg/apiclient/repository"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture"
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture/app"
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture/repos"
-	. "github.com/argoproj/argo-cd/v2/util/errors"
-	argoio "github.com/argoproj/argo-cd/v2/util/io"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	repositorypkg "github.com/dcoppa/argo-cd/v2/pkg/apiclient/repository"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture/app"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture/repos"
+	. "github.com/dcoppa/argo-cd/v2/util/errors"
+	argoio "github.com/dcoppa/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 func TestAddRemovePublicRepo(t *testing.T) {

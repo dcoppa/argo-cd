@@ -7,7 +7,7 @@ import (
 
 	"sigs.k8s.io/yaml"
 
-	argoprojiov1alpha1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
+	argoprojiov1alpha1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 )
 
 var _ Generator = (*ListGenerator)(nil)

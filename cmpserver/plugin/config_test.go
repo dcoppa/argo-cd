@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/require"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/argoproj/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/common"
 )
 
 func Test_IsDefined(t *testing.T) {

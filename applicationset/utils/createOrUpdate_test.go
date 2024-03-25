@@ -8,7 +8,7 @@ import (
 	"gopkg.in/yaml.v3"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 )
 
 func Test_applyIgnoreDifferences(t *testing.T) {

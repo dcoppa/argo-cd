@@ -10,7 +10,7 @@ import (
 
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/argoproj/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
 
 	"github.com/argoproj/gitops-engine/pkg/utils/kube"
 	"sigs.k8s.io/controller-runtime/pkg/envtest"

@@ -12,17 +12,17 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	k8scache "k8s.io/client-go/tools/cache"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient/applicationset"
-	appsv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	apps "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned/fake"
-	appinformer "github.com/argoproj/argo-cd/v2/pkg/client/informers/externalversions"
-	"github.com/argoproj/argo-cd/v2/server/rbacpolicy"
-	"github.com/argoproj/argo-cd/v2/util/assets"
-	"github.com/argoproj/argo-cd/v2/util/db"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/rbac"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient/applicationset"
+	appsv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	apps "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned/fake"
+	appinformer "github.com/dcoppa/argo-cd/v2/pkg/client/informers/externalversions"
+	"github.com/dcoppa/argo-cd/v2/server/rbacpolicy"
+	"github.com/dcoppa/argo-cd/v2/util/assets"
+	"github.com/dcoppa/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/rbac"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 const (

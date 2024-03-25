@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/argoproj/argo-cd/v2/util/buffered_context"
+	"github.com/dcoppa/argo-cd/v2/util/buffered_context"
 )
 
 func TestWithEarlierDeadline_NoDeadline(t *testing.T) {

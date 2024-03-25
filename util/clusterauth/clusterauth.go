@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/argoproj/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/common"
 	jwt "github.com/golang-jwt/jwt/v4"
 	log "github.com/sirupsen/logrus"
 	corev1 "k8s.io/api/core/v1"

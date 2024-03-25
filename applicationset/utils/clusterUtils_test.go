@@ -12,7 +12,7 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	kubetesting "k8s.io/client-go/testing"
 
-	argoappv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
+	argoappv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 )
 
 const (

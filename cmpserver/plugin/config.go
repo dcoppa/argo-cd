@@ -6,9 +6,9 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	configUtil "github.com/argoproj/argo-cd/v2/util/config"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	configUtil "github.com/dcoppa/argo-cd/v2/util/config"
 )
 
 const (

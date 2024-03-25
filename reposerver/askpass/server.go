@@ -11,8 +11,8 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/argoproj/argo-cd/v2/util/git"
-	"github.com/argoproj/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/util/git"
+	"github.com/dcoppa/argo-cd/v2/util/io"
 )
 
 type Server interface {

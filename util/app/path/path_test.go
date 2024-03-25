@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	fileutil "github.com/argoproj/argo-cd/v2/test/fixture/path"
+	fileutil "github.com/dcoppa/argo-cd/v2/test/fixture/path"
 )
 
 func TestPathRoot(t *testing.T) {

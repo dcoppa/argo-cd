@@ -9,11 +9,11 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	appclientset "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned/fake"
-	"github.com/argoproj/argo-cd/v2/test"
-	"github.com/argoproj/argo-cd/v2/util/session"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	"github.com/dcoppa/argo-cd/v2/common"
+	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned/fake"
+	"github.com/dcoppa/argo-cd/v2/test"
+	"github.com/dcoppa/argo-cd/v2/util/session"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/stretchr/testify/assert"

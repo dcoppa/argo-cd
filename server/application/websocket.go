@@ -3,9 +3,9 @@ package application
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/argoproj/argo-cd/v2/common"
-	httputil "github.com/argoproj/argo-cd/v2/util/http"
-	util_session "github.com/argoproj/argo-cd/v2/util/session"
+	"github.com/dcoppa/argo-cd/v2/common"
+	httputil "github.com/dcoppa/argo-cd/v2/util/http"
+	util_session "github.com/dcoppa/argo-cd/v2/util/session"
 	"net/http"
 	"sync"
 	"time"

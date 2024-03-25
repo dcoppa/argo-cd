@@ -8,14 +8,14 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/v2/util/env"
-	service "github.com/argoproj/argo-cd/v2/util/notification/argocd"
-	settings "github.com/argoproj/argo-cd/v2/util/notification/settings"
-	"github.com/argoproj/argo-cd/v2/util/tls"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/util/env"
+	service "github.com/dcoppa/argo-cd/v2/util/notification/argocd"
+	settings "github.com/dcoppa/argo-cd/v2/util/notification/settings"
+	"github.com/dcoppa/argo-cd/v2/util/tls"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application"
 	"github.com/argoproj/notifications-engine/pkg/cmd"
 	"github.com/spf13/cobra"
 )

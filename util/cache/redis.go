@@ -10,7 +10,7 @@ import (
 	"net"
 	"time"
 
-	ioutil "github.com/argoproj/argo-cd/v2/util/io"
+	ioutil "github.com/dcoppa/argo-cd/v2/util/io"
 
 	rediscache "github.com/go-redis/cache/v9"
 	"github.com/redis/go-redis/v9"

@@ -6,13 +6,13 @@ import (
 
 	"context"
 
-	gpgkeypkg "github.com/argoproj/argo-cd/v2/pkg/apiclient/gpgkey"
-	appsv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/v2/server/rbacpolicy"
-	"github.com/argoproj/argo-cd/v2/util/db"
-	"github.com/argoproj/argo-cd/v2/util/gpg"
-	"github.com/argoproj/argo-cd/v2/util/rbac"
+	gpgkeypkg "github.com/dcoppa/argo-cd/v2/pkg/apiclient/gpgkey"
+	appsv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/server/rbacpolicy"
+	"github.com/dcoppa/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/util/gpg"
+	"github.com/dcoppa/argo-cd/v2/util/rbac"
 )
 
 // Server provides a service of type GPGKeyService

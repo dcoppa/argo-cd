@@ -11,17 +11,17 @@ import (
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc/codes"
 
-	"github.com/argoproj/argo-cd/v2/cmd/argocd/commands/headless"
-	cmdutil "github.com/argoproj/argo-cd/v2/cmd/util"
-	argocdclient "github.com/argoproj/argo-cd/v2/pkg/apiclient"
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient/applicationset"
-	arogappsetv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/argo"
-	"github.com/argoproj/argo-cd/v2/util/cli"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/grpc"
-	argoio "github.com/argoproj/argo-cd/v2/util/io"
-	"github.com/argoproj/argo-cd/v2/util/templates"
+	"github.com/dcoppa/argo-cd/v2/cmd/argocd/commands/headless"
+	cmdutil "github.com/dcoppa/argo-cd/v2/cmd/util"
+	argocdclient "github.com/dcoppa/argo-cd/v2/pkg/apiclient"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient/applicationset"
+	arogappsetv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/argo"
+	"github.com/dcoppa/argo-cd/v2/util/cli"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/grpc"
+	argoio "github.com/dcoppa/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/util/templates"
 )
 
 var (

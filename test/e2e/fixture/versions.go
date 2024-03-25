@@ -8,9 +8,9 @@ import (
 	"github.com/argoproj/gitops-engine/pkg/cache"
 	"github.com/argoproj/gitops-engine/pkg/utils/kube"
 
-	"github.com/argoproj/argo-cd/v2/util/argo"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	kubeutil "github.com/argoproj/argo-cd/v2/util/kube"
+	"github.com/dcoppa/argo-cd/v2/util/argo"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	kubeutil "github.com/dcoppa/argo-cd/v2/util/kube"
 )
 
 type Versions struct {

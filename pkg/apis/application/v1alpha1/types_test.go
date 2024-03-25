@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"k8s.io/utils/pointer"
 
-	argocdcommon "github.com/argoproj/argo-cd/v2/common"
+	argocdcommon "github.com/dcoppa/argo-cd/v2/common"
 
 	"github.com/argoproj/gitops-engine/pkg/sync/common"
 	"github.com/stretchr/testify/assert"

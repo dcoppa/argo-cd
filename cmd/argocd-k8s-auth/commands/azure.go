@@ -6,7 +6,7 @@ import (
 	"github.com/Azure/kubelogin/pkg/token"
 	"github.com/spf13/cobra"
 
-	"github.com/argoproj/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
 )
 
 var (

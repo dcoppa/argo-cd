@@ -8,16 +8,16 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"github.com/argoproj/argo-cd/v2/cmd/argocd/commands/headless"
-	"github.com/argoproj/argo-cd/v2/common"
-	argocdclient "github.com/argoproj/argo-cd/v2/pkg/apiclient"
-	repocredspkg "github.com/argoproj/argo-cd/v2/pkg/apiclient/repocreds"
-	appsv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/cli"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/git"
-	"github.com/argoproj/argo-cd/v2/util/io"
-	"github.com/argoproj/argo-cd/v2/util/templates"
+	"github.com/dcoppa/argo-cd/v2/cmd/argocd/commands/headless"
+	"github.com/dcoppa/argo-cd/v2/common"
+	argocdclient "github.com/dcoppa/argo-cd/v2/pkg/apiclient"
+	repocredspkg "github.com/dcoppa/argo-cd/v2/pkg/apiclient/repocreds"
+	appsv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/cli"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/git"
+	"github.com/dcoppa/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/util/templates"
 )
 
 // NewRepoCredsCommand returns a new instance of an `argocd repocreds` command

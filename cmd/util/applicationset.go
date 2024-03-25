@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"os"
 
-	argoprojiov1alpha1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/config"
+	argoprojiov1alpha1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/config"
 	"github.com/argoproj/gitops-engine/pkg/utils/kube"
 )
 

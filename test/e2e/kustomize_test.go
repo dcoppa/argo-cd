@@ -8,10 +8,10 @@ import (
 	. "github.com/argoproj/gitops-engine/pkg/sync/common"
 	"github.com/stretchr/testify/assert"
 
-	. "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture"
-	. "github.com/argoproj/argo-cd/v2/test/e2e/fixture/app"
-	"github.com/argoproj/argo-cd/v2/util/errors"
+	. "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
+	. "github.com/dcoppa/argo-cd/v2/test/e2e/fixture/app"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
 )
 
 func TestKustomize2AppSource(t *testing.T) {

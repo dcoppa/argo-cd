@@ -13,8 +13,8 @@ import (
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/credentials/insecure"
 
-	argogrpc "github.com/argoproj/argo-cd/v2/util/grpc"
-	"github.com/argoproj/argo-cd/v2/util/io"
+	argogrpc "github.com/dcoppa/argo-cd/v2/util/grpc"
+	"github.com/dcoppa/argo-cd/v2/util/io"
 )
 
 //go:generate go run github.com/vektra/mockery/v2@v2.15.0 --name=RepoServerServiceClient

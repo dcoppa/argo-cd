@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/argoproj/argo-cd/v2/util/assets"
-	"github.com/argoproj/argo-cd/v2/util/glob"
-	jwtutil "github.com/argoproj/argo-cd/v2/util/jwt"
+	"github.com/dcoppa/argo-cd/v2/util/assets"
+	"github.com/dcoppa/argo-cd/v2/util/glob"
+	jwtutil "github.com/dcoppa/argo-cd/v2/util/jwt"
 
 	"github.com/Knetic/govaluate"
 	"github.com/casbin/casbin/v2"

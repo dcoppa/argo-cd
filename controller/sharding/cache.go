@@ -3,8 +3,8 @@ package sharding
 import (
 	"sync"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/db"
 	log "github.com/sirupsen/logrus"
 )
 

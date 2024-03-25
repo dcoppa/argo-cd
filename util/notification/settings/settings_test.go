@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient/mocks"
-	service "github.com/argoproj/argo-cd/v2/util/notification/argocd"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient/mocks"
+	service "github.com/dcoppa/argo-cd/v2/util/notification/argocd"
 	"github.com/argoproj/notifications-engine/pkg/api"
 	"github.com/argoproj/notifications-engine/pkg/services"
 	"github.com/stretchr/testify/assert"

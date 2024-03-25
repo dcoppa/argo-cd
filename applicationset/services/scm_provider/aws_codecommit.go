@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	application "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
+	application "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/arn"
 	"github.com/aws/aws-sdk-go/aws/awserr"

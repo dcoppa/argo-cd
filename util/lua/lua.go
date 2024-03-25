@@ -15,9 +15,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	luajson "layeh.com/gopher-json"
 
-	appv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/resource_customizations"
-	"github.com/argoproj/argo-cd/v2/util/glob"
+	appv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/resource_customizations"
+	"github.com/dcoppa/argo-cd/v2/util/glob"
 )
 
 const (

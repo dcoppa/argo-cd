@@ -41,17 +41,17 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
-	"github.com/argoproj/argo-cd/v2/applicationset/generators"
-	"github.com/argoproj/argo-cd/v2/applicationset/utils"
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/util/db"
-	"github.com/argoproj/argo-cd/v2/util/glob"
+	"github.com/dcoppa/argo-cd/v2/applicationset/generators"
+	"github.com/dcoppa/argo-cd/v2/applicationset/utils"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/util/glob"
 
-	argov1alpha1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned"
-	argoutil "github.com/argoproj/argo-cd/v2/util/argo"
+	argov1alpha1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned"
+	argoutil "github.com/dcoppa/argo-cd/v2/util/argo"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application"
 )
 
 const (

@@ -7,11 +7,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	testutil "github.com/argoproj/argo-cd/v2/test"
-	argo "github.com/argoproj/argo-cd/v2/util/argo/diff"
-	"github.com/argoproj/argo-cd/v2/util/argo/testdata"
-	appstatecache "github.com/argoproj/argo-cd/v2/util/cache/appstate"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	testutil "github.com/dcoppa/argo-cd/v2/test"
+	argo "github.com/dcoppa/argo-cd/v2/util/argo/diff"
+	"github.com/dcoppa/argo-cd/v2/util/argo/testdata"
+	appstatecache "github.com/dcoppa/argo-cd/v2/util/cache/appstate"
 )
 
 func TestStateDiff(t *testing.T) {

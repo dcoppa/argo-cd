@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/argoproj/argo-cd/v2/applicationset/services/github_app_auth"
-	"github.com/argoproj/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/applicationset/services/github_app_auth"
+	"github.com/dcoppa/argo-cd/v2/util/db"
 )
 
 // NewAuthCredentials returns a GtiHub App credentials lookup by repo-creds url.

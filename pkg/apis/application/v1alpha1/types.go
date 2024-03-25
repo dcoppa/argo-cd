@@ -35,12 +35,12 @@ import (
 	"k8s.io/client-go/tools/clientcmd/api"
 	"sigs.k8s.io/yaml"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/util/collections"
-	"github.com/argoproj/argo-cd/v2/util/env"
-	"github.com/argoproj/argo-cd/v2/util/helm"
-	utilhttp "github.com/argoproj/argo-cd/v2/util/http"
-	"github.com/argoproj/argo-cd/v2/util/security"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/util/collections"
+	"github.com/dcoppa/argo-cd/v2/util/env"
+	"github.com/dcoppa/argo-cd/v2/util/helm"
+	utilhttp "github.com/dcoppa/argo-cd/v2/util/http"
+	"github.com/dcoppa/argo-cd/v2/util/security"
 )
 
 // Application is a definition of Application resource.

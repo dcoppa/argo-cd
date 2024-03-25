@@ -16,14 +16,14 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	. "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture"
-	. "github.com/argoproj/argo-cd/v2/test/e2e/fixture"
-	. "github.com/argoproj/argo-cd/v2/test/e2e/fixture/app"
-	projectFixture "github.com/argoproj/argo-cd/v2/test/e2e/fixture/project"
-	"github.com/argoproj/argo-cd/v2/test/e2e/fixture/repos"
-	. "github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	. "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
+	. "github.com/dcoppa/argo-cd/v2/test/e2e/fixture"
+	. "github.com/dcoppa/argo-cd/v2/test/e2e/fixture/app"
+	projectFixture "github.com/dcoppa/argo-cd/v2/test/e2e/fixture/project"
+	"github.com/dcoppa/argo-cd/v2/test/e2e/fixture/repos"
+	. "github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 func TestHelmHooksAreCreated(t *testing.T) {

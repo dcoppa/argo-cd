@@ -15,8 +15,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
 )
 
 func decorateDirector(director func(req *http.Request), target *url.URL) func(req *http.Request) {

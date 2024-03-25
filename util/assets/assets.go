@@ -1,7 +1,7 @@
 package assets
 
 import (
-	"github.com/argoproj/argo-cd/v2/assets"
+	"github.com/dcoppa/argo-cd/v2/assets"
 )
 
 var (

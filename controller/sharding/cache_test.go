@@ -3,8 +3,8 @@ package sharding
 import (
 	"testing"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	dbmocks "github.com/argoproj/argo-cd/v2/util/db/mocks"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	dbmocks "github.com/dcoppa/argo-cd/v2/util/db/mocks"
 	"github.com/stretchr/testify/assert"
 )
 

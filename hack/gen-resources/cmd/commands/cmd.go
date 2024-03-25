@@ -6,13 +6,13 @@ import (
 
 	"github.com/spf13/cobra"
 
-	generator "github.com/argoproj/argo-cd/v2/hack/gen-resources/generators"
-	"github.com/argoproj/argo-cd/v2/util/db"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	generator "github.com/dcoppa/argo-cd/v2/hack/gen-resources/generators"
+	"github.com/dcoppa/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 
-	cmdutil "github.com/argoproj/argo-cd/v2/cmd/util"
-	"github.com/argoproj/argo-cd/v2/hack/gen-resources/util"
-	"github.com/argoproj/argo-cd/v2/util/cli"
+	cmdutil "github.com/dcoppa/argo-cd/v2/cmd/util"
+	"github.com/dcoppa/argo-cd/v2/hack/gen-resources/util"
+	"github.com/dcoppa/argo-cd/v2/util/cli"
 )
 
 const (

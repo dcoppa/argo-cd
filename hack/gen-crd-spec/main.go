@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application"
 
 	"github.com/argoproj/gitops-engine/pkg/utils/kube"
 	extensionsobj "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"

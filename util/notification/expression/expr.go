@@ -3,11 +3,11 @@ package expression
 import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	service "github.com/argoproj/argo-cd/v2/util/notification/argocd"
+	service "github.com/dcoppa/argo-cd/v2/util/notification/argocd"
 
-	"github.com/argoproj/argo-cd/v2/util/notification/expression/repo"
-	"github.com/argoproj/argo-cd/v2/util/notification/expression/strings"
-	"github.com/argoproj/argo-cd/v2/util/notification/expression/time"
+	"github.com/dcoppa/argo-cd/v2/util/notification/expression/repo"
+	"github.com/dcoppa/argo-cd/v2/util/notification/expression/strings"
+	"github.com/dcoppa/argo-cd/v2/util/notification/expression/time"
 )
 
 var helpers = map[string]interface{}{}

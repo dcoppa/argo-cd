@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	util_session "github.com/argoproj/argo-cd/v2/util/session"
+	util_session "github.com/dcoppa/argo-cd/v2/util/session"
 	"github.com/argoproj/gitops-engine/pkg/utils/kube"
 	log "github.com/sirupsen/logrus"
 	v1 "k8s.io/api/core/v1"
@@ -17,16 +17,16 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/remotecommand"
 
-	appv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	applisters "github.com/argoproj/argo-cd/v2/pkg/client/listers/application/v1alpha1"
-	servercache "github.com/argoproj/argo-cd/v2/server/cache"
-	"github.com/argoproj/argo-cd/v2/server/rbacpolicy"
-	"github.com/argoproj/argo-cd/v2/util/argo"
-	"github.com/argoproj/argo-cd/v2/util/db"
-	"github.com/argoproj/argo-cd/v2/util/rbac"
-	"github.com/argoproj/argo-cd/v2/util/security"
-	sessionmgr "github.com/argoproj/argo-cd/v2/util/session"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	appv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	applisters "github.com/dcoppa/argo-cd/v2/pkg/client/listers/application/v1alpha1"
+	servercache "github.com/dcoppa/argo-cd/v2/server/cache"
+	"github.com/dcoppa/argo-cd/v2/server/rbacpolicy"
+	"github.com/dcoppa/argo-cd/v2/util/argo"
+	"github.com/dcoppa/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/util/rbac"
+	"github.com/dcoppa/argo-cd/v2/util/security"
+	sessionmgr "github.com/dcoppa/argo-cd/v2/util/session"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 type terminalHandler struct {

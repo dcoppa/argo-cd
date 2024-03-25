@@ -10,8 +10,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client/fake"
 
-	pullrequest "github.com/argoproj/argo-cd/v2/applicationset/services/pull_request"
-	argoprojiov1alpha1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
+	pullrequest "github.com/dcoppa/argo-cd/v2/applicationset/services/pull_request"
+	argoprojiov1alpha1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 )
 
 func TestPullRequestGithubGenerateParams(t *testing.T) {

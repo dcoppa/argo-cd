@@ -7,14 +7,14 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	cmdutil "github.com/argoproj/argo-cd/v2/cmd/util"
-	"github.com/argoproj/argo-cd/v2/cmpserver"
-	"github.com/argoproj/argo-cd/v2/cmpserver/plugin"
-	"github.com/argoproj/argo-cd/v2/common"
-	"github.com/argoproj/argo-cd/v2/util/cli"
-	"github.com/argoproj/argo-cd/v2/util/env"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	traceutil "github.com/argoproj/argo-cd/v2/util/trace"
+	cmdutil "github.com/dcoppa/argo-cd/v2/cmd/util"
+	"github.com/dcoppa/argo-cd/v2/cmpserver"
+	"github.com/dcoppa/argo-cd/v2/cmpserver/plugin"
+	"github.com/dcoppa/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/util/cli"
+	"github.com/dcoppa/argo-cd/v2/util/env"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	traceutil "github.com/dcoppa/argo-cd/v2/util/trace"
 )
 
 const (

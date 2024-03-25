@@ -10,8 +10,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/argoproj/argo-cd/v2/cmd/argocd/commands/initialize"
-	"github.com/argoproj/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/cmd/argocd/commands/initialize"
+	"github.com/dcoppa/argo-cd/v2/common"
 
 	"github.com/alicebob/miniredis/v2"
 	"github.com/golang/protobuf/ptypes/empty"
@@ -24,18 +24,18 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/utils/pointer"
 
-	"github.com/argoproj/argo-cd/v2/pkg/apiclient"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	appclientset "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned"
-	repoapiclient "github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/v2/server"
-	servercache "github.com/argoproj/argo-cd/v2/server/cache"
-	"github.com/argoproj/argo-cd/v2/util/cache"
-	appstatecache "github.com/argoproj/argo-cd/v2/util/cache/appstate"
-	"github.com/argoproj/argo-cd/v2/util/cli"
-	"github.com/argoproj/argo-cd/v2/util/io"
-	kubeutil "github.com/argoproj/argo-cd/v2/util/kube"
-	"github.com/argoproj/argo-cd/v2/util/localconfig"
+	"github.com/dcoppa/argo-cd/v2/pkg/apiclient"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned"
+	repoapiclient "github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/server"
+	servercache "github.com/dcoppa/argo-cd/v2/server/cache"
+	"github.com/dcoppa/argo-cd/v2/util/cache"
+	appstatecache "github.com/dcoppa/argo-cd/v2/util/cache/appstate"
+	"github.com/dcoppa/argo-cd/v2/util/cli"
+	"github.com/dcoppa/argo-cd/v2/util/io"
+	kubeutil "github.com/dcoppa/argo-cd/v2/util/kube"
+	"github.com/dcoppa/argo-cd/v2/util/localconfig"
 )
 
 type forwardCacheClient struct {

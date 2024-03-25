@@ -30,11 +30,11 @@ import (
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	utilnet "k8s.io/apimachinery/pkg/util/net"
 
-	"github.com/argoproj/argo-cd/v2/common"
-	certutil "github.com/argoproj/argo-cd/v2/util/cert"
-	"github.com/argoproj/argo-cd/v2/util/env"
-	executil "github.com/argoproj/argo-cd/v2/util/exec"
-	"github.com/argoproj/argo-cd/v2/util/proxy"
+	"github.com/dcoppa/argo-cd/v2/common"
+	certutil "github.com/dcoppa/argo-cd/v2/util/cert"
+	"github.com/dcoppa/argo-cd/v2/util/env"
+	executil "github.com/dcoppa/argo-cd/v2/util/exec"
+	"github.com/dcoppa/argo-cd/v2/util/proxy"
 )
 
 var ErrInvalidRepoURL = fmt.Errorf("repo URL is invalid")

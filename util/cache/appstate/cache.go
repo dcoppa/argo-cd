@@ -9,9 +9,9 @@ import (
 	"github.com/redis/go-redis/v9"
 	"github.com/spf13/cobra"
 
-	appv1 "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	cacheutil "github.com/argoproj/argo-cd/v2/util/cache"
-	"github.com/argoproj/argo-cd/v2/util/env"
+	appv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	cacheutil "github.com/dcoppa/argo-cd/v2/util/cache"
+	"github.com/dcoppa/argo-cd/v2/util/env"
 )
 
 var ErrCacheMiss = cacheutil.ErrCacheMiss

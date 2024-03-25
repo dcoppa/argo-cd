@@ -16,17 +16,17 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/yaml"
 
-	"github.com/argoproj/argo-cd/v2/cmd/argocd/commands/headless"
-	cmdutil "github.com/argoproj/argo-cd/v2/cmd/util"
-	argocdclient "github.com/argoproj/argo-cd/v2/pkg/apiclient"
-	projectpkg "github.com/argoproj/argo-cd/v2/pkg/apiclient/project"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	"github.com/argoproj/argo-cd/v2/util/cli"
-	"github.com/argoproj/argo-cd/v2/util/errors"
-	"github.com/argoproj/argo-cd/v2/util/git"
-	"github.com/argoproj/argo-cd/v2/util/gpg"
-	argoio "github.com/argoproj/argo-cd/v2/util/io"
-	"github.com/argoproj/argo-cd/v2/util/templates"
+	"github.com/dcoppa/argo-cd/v2/cmd/argocd/commands/headless"
+	cmdutil "github.com/dcoppa/argo-cd/v2/cmd/util"
+	argocdclient "github.com/dcoppa/argo-cd/v2/pkg/apiclient"
+	projectpkg "github.com/dcoppa/argo-cd/v2/pkg/apiclient/project"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	"github.com/dcoppa/argo-cd/v2/util/cli"
+	"github.com/dcoppa/argo-cd/v2/util/errors"
+	"github.com/dcoppa/argo-cd/v2/util/git"
+	"github.com/dcoppa/argo-cd/v2/util/gpg"
+	argoio "github.com/dcoppa/argo-cd/v2/util/io"
+	"github.com/dcoppa/argo-cd/v2/util/templates"
 )
 
 type policyOpts struct {

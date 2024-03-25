@@ -7,8 +7,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/assert"
 
-	. "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	cacheutil "github.com/argoproj/argo-cd/v2/util/cache"
+	. "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	cacheutil "github.com/dcoppa/argo-cd/v2/util/cache"
 )
 
 type fixtures struct {

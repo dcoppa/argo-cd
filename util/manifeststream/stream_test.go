@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
-	applicationpkg "github.com/argoproj/argo-cd/v2/pkg/apiclient/application"
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/v2/test"
-	"github.com/argoproj/argo-cd/v2/util/io/files"
-	"github.com/argoproj/argo-cd/v2/util/manifeststream"
+	applicationpkg "github.com/dcoppa/argo-cd/v2/pkg/apiclient/application"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/test"
+	"github.com/dcoppa/argo-cd/v2/util/io/files"
+	"github.com/dcoppa/argo-cd/v2/util/manifeststream"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

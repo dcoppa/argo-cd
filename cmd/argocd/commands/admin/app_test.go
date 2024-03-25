@@ -15,16 +15,16 @@ import (
 	kubefake "k8s.io/client-go/kubernetes/fake"
 	"k8s.io/client-go/tools/cache"
 
-	statecache "github.com/argoproj/argo-cd/v2/controller/cache"
-	cachemocks "github.com/argoproj/argo-cd/v2/controller/cache/mocks"
-	"github.com/argoproj/argo-cd/v2/controller/metrics"
-	"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1"
-	appfake "github.com/argoproj/argo-cd/v2/pkg/client/clientset/versioned/fake"
-	argocdclient "github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient/mocks"
-	"github.com/argoproj/argo-cd/v2/test"
-	"github.com/argoproj/argo-cd/v2/util/db"
-	"github.com/argoproj/argo-cd/v2/util/settings"
+	statecache "github.com/dcoppa/argo-cd/v2/controller/cache"
+	cachemocks "github.com/dcoppa/argo-cd/v2/controller/cache/mocks"
+	"github.com/dcoppa/argo-cd/v2/controller/metrics"
+	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
+	appfake "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned/fake"
+	argocdclient "github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient/mocks"
+	"github.com/dcoppa/argo-cd/v2/test"
+	"github.com/dcoppa/argo-cd/v2/util/db"
+	"github.com/dcoppa/argo-cd/v2/util/settings"
 )
 
 func TestGetReconcileResults(t *testing.T) {

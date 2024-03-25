@@ -13,7 +13,7 @@ import (
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/client-go/util/retry"
 
-	"github.com/argoproj/argo-cd/v2/common"
+	"github.com/dcoppa/argo-cd/v2/common"
 )
 
 const (

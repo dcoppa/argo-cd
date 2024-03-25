@@ -3,8 +3,8 @@ package apiclient_test
 import (
 	"testing"
 
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient"
-	"github.com/argoproj/argo-cd/v2/reposerver/apiclient/mocks"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient"
+	"github.com/dcoppa/argo-cd/v2/reposerver/apiclient/mocks"
 	"github.com/stretchr/testify/assert"
 )
 

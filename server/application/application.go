@@ -1005,7 +1005,6 @@ func (s *Server) Delete(ctx context.Context, q *application.ApplicationDeleteReq
 		return nil, status.Error(codes.InvalidArgument, "cannot set propagation policy when cascading is disabled")
 	}
 
-	patchFinalizer := false
 	if q.Cascade == nil || *q.Cascade {
 		// validate the propgation policy
 		policyFinalizer := getPropagationPolicyFinalizer(q.GetPropagationPolicy())
@@ -1014,30 +1013,10 @@ func (s *Server) Delete(ctx context.Context, q *application.ApplicationDeleteReq
 		}
 		if !a.IsFinalizerPresent(policyFinalizer) {
 			a.SetCascadedDeletion(policyFinalizer)
-			patchFinalizer = true
 		}
 	} else {
 		if a.CascadedDeletion() {
 			a.UnSetCascadedDeletion()
-			patchFinalizer = true
-		}
-	}
-
-	if patchFinalizer {
-		// Although the cascaded deletion/propagation policy finalizer is not set when apps are created via
-		// API, they will often be set by the user as part of declarative config. As part of a delete
-		// request, we always calculate the patch to see if we need to set/unset the finalizer.
-		patch, err := json.Marshal(map[string]interface{}{
-			"metadata": map[string]interface{}{
-				"finalizers": a.Finalizers,
-			},
-		})
-		if err != nil {
-			return nil, fmt.Errorf("error marshaling finalizers: %w", err)
-		}
-		_, err = s.appclientset.ArgoprojV1alpha1().Applications(a.Namespace).Patch(ctx, a.Name, types.MergePatchType, patch, metav1.PatchOptions{})
-		if err != nil {
-			return nil, fmt.Errorf("error patching application with finalizers: %w", err)
 		}
 	}
 

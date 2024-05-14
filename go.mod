@@ -292,21 +292,12 @@ require (
 )
 
 replace (
-	// https://github.com/golang/go/issues/33546#issuecomment-519656923
 	github.com/go-check/check => github.com/go-check/check v0.0.0-20180628173108-788fd7840127
-
 	github.com/golang/protobuf => github.com/golang/protobuf v1.4.2
 	github.com/grpc-ecosystem/grpc-gateway => github.com/grpc-ecosystem/grpc-gateway v1.16.0
-
-	// Avoid  CVE-2023-46402
 	github.com/whilp/git-urls => github.com/chainguard-dev/git-urls v1.0.2
-
-	// Avoid CVE-2022-3064
 	gopkg.in/yaml.v2 => gopkg.in/yaml.v2 v2.4.0
-
-	// Avoid CVE-2022-28948
 	gopkg.in/yaml.v3 => gopkg.in/yaml.v3 v3.0.1
-
 	k8s.io/api => k8s.io/api v0.26.11
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.26.11
 	k8s.io/apimachinery => k8s.io/apimachinery v0.26.11
@@ -336,5 +327,4 @@ replace (
 	k8s.io/sample-apiserver => k8s.io/sample-apiserver v0.26.11
 	k8s.io/sample-cli-plugin => k8s.io/sample-cli-plugin v0.26.11
 	k8s.io/sample-controller => k8s.io/sample-controller v0.26.11
-
 )

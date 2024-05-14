@@ -1,6 +1,5 @@
 package application
 
-
 const (
 	// API Group
 	Group string = "argoproj.io"

@@ -78,6 +78,12 @@ func (c *forwardCacheClient) Set(item *cache.Item) error {
 	})
 }
 
+func (c *forwardCacheClient) Rename(oldKey string, newKey string, expiration time.Duration) error {
+	return c.doLazy(func(client cache.CacheClient) error {
+		return client.Rename(oldKey, newKey, expiration)
+	})
+}
+
 func (c *forwardCacheClient) Get(key string, obj interface{}) error {
 	return c.doLazy(func(client cache.CacheClient) error {
 		return client.Get(key, obj)
@@ -109,6 +115,7 @@ type forwardRepoClientset struct {
 	repoClientset  repoapiclient.Clientset
 	err            error
 	repoServerName string
+	kubeClientset  kubernetes.Interface
 }
 
 func (c *forwardRepoClientset) NewRepoServerClient() (io.Closer, repoapiclient.RepoServerServiceClient, error) {
@@ -231,7 +238,7 @@ func MaybeStartLocalServer(ctx context.Context, clientOpts *apiclient.ClientOpti
 		KubeClientset:        kubeClientset,
 		Insecure:             true,
 		ListenHost:           *address,
-		RepoClientset:        &forwardRepoClientset{namespace: namespace, context: ctxStr, repoServerName: clientOpts.RepoServerName},
+		RepoClientset:        &forwardRepoClientset{namespace: namespace, context: ctxStr, repoServerName: clientOpts.RepoServerName, kubeClientset: kubeClientset},
 		EnableProxyExtension: false,
 	})
 	srv.Init(ctx)

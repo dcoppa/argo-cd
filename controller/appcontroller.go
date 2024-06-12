@@ -48,7 +48,6 @@ import (
 	"github.com/dcoppa/argo-cd/v2/controller/sharding"
 	"github.com/dcoppa/argo-cd/v2/pkg/apis/application"
 	appv1 "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
-	argov1alpha "github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned"
 	"github.com/dcoppa/argo-cd/v2/pkg/client/informers/externalversions/application/v1alpha1"
 	applisters "github.com/dcoppa/argo-cd/v2/pkg/client/listers/application/v1alpha1"
@@ -515,13 +514,13 @@ func (ctrl *ApplicationController) getResourceTree(a *appv1.Application, managed
 		if err != nil {
 			return nil, fmt.Errorf("failed to unmarshal live state of managed resources: %w", err)
 		}
-		var target = &unstructured.Unstructured{}
-		err = json.Unmarshal([]byte(managedResource.TargetState), &target)
-		if err != nil {
-			return nil, fmt.Errorf("failed to unmarshal target state of managed resources: %w", err)
-		}
 
 		if live == nil {
+			var target = &unstructured.Unstructured{}
+			err = json.Unmarshal([]byte(managedResource.TargetState), &target)
+			if err != nil {
+				return nil, fmt.Errorf("failed to unmarshal target state of managed resources: %w", err)
+			}
 			nodes = append(nodes, appv1.ResourceNode{
 				ResourceRef: appv1.ResourceRef{
 					Version:   target.GroupVersionKind().Version,
@@ -801,7 +800,13 @@ func (ctrl *ApplicationController) Run(ctx context.Context, statusProcessors int
 	if err != nil {
 		log.Warnf("Cannot init sharding. Error while querying clusters list from database: %v", err)
 	} else {
-		ctrl.clusterSharding.Init(clusters)
+		appItems, err := ctrl.getAppList(metav1.ListOptions{})
+
+		if err != nil {
+			log.Warnf("Cannot init sharding. Error while querying application list from database: %v", err)
+		} else {
+			ctrl.clusterSharding.Init(clusters, appItems)
+		}
 	}
 
 	errors.CheckError(ctrl.stateCache.Init())
@@ -1055,7 +1060,7 @@ func (ctrl *ApplicationController) getPermittedAppLiveObjects(app *appv1.Applica
 	return objsMap, nil
 }
 
-func (ctrl *ApplicationController) isValidDestination(app *appv1.Application) (bool, *argov1alpha.Cluster) {
+func (ctrl *ApplicationController) isValidDestination(app *appv1.Application) (bool, *appv1.Cluster) {
 	// Validate the cluster using the Application destination's `name` field, if applicable,
 	// and set the Server field, if needed.
 	if err := argo.ValidateDestination(context.Background(), &app.Spec.Destination, ctrl.db); err != nil {
@@ -1918,7 +1923,15 @@ func (ctrl *ApplicationController) autoSync(app *appv1.Application, syncStatus *
 	} else {
 		ctrl.writeBackToInformer(updatedApp)
 	}
-	message := fmt.Sprintf("Initiated automated sync to '%s'", desiredCommitSHA)
+
+	var target string
+	if updatedApp.Spec.HasMultipleSources() {
+		target = strings.Join(desiredCommitSHAsMS, ", ")
+	} else {
+		target = desiredCommitSHA
+	}
+	message := fmt.Sprintf("Initiated automated sync to '%s'", target)
+
 	ctrl.auditLogger.LogAppEvent(app, argo.EventInfo{Reason: argo.EventReasonOperationStarted, Type: v1.EventTypeNormal}, message, "")
 	logCtx.Info(message)
 	return nil, setOpTime
@@ -2111,6 +2124,10 @@ func (ctrl *ApplicationController) newApplicationInformerAndLister() (cache.Shar
 					ctrl.appRefreshQueue.AddRateLimited(key)
 					ctrl.appOperationQueue.AddRateLimited(key)
 				}
+				newApp, newOK := obj.(*appv1.Application)
+				if err == nil && newOK {
+					ctrl.clusterSharding.AddApp(newApp)
+				}
 			},
 			UpdateFunc: func(old, new interface{}) {
 				if !ctrl.canProcessApp(new) {
@@ -2141,6 +2158,7 @@ func (ctrl *ApplicationController) newApplicationInformerAndLister() (cache.Shar
 
 				ctrl.requestAppRefresh(newApp.QualifiedName(), compareWith, delay)
 				ctrl.appOperationQueue.AddRateLimited(key)
+				ctrl.clusterSharding.UpdateApp(newApp)
 			},
 			DeleteFunc: func(obj interface{}) {
 				if !ctrl.canProcessApp(obj) {
@@ -2152,6 +2170,10 @@ func (ctrl *ApplicationController) newApplicationInformerAndLister() (cache.Shar
 				if err == nil {
 					// for deletes, we immediately add to the refresh queue
 					ctrl.appRefreshQueue.Add(key)
+				}
+				delApp, delOK := obj.(*appv1.Application)
+				if err == nil && delOK {
+					ctrl.clusterSharding.DeleteApp(delApp)
 				}
 			},
 		},
@@ -2228,4 +2250,26 @@ func (ctrl *ApplicationController) toAppQualifiedName(appName, appNamespace stri
 	return fmt.Sprintf("%s/%s", appNamespace, appName)
 }
 
-type ClusterFilterFunction func(c *argov1alpha.Cluster, distributionFunction sharding.DistributionFunction) bool
+func (ctrl *ApplicationController) getAppList(options metav1.ListOptions) (*appv1.ApplicationList, error) {
+	watchNamespace := ctrl.namespace
+	// If we have at least one additional namespace configured, we need to
+	// watch on them all.
+	if len(ctrl.applicationNamespaces) > 0 {
+		watchNamespace = ""
+	}
+
+	appList, err := ctrl.applicationClientset.ArgoprojV1alpha1().Applications(watchNamespace).List(context.TODO(), options)
+	if err != nil {
+		return nil, err
+	}
+	newItems := []appv1.Application{}
+	for _, app := range appList.Items {
+		if ctrl.isAppNamespaceAllowed(&app) {
+			newItems = append(newItems, app)
+		}
+	}
+	appList.Items = newItems
+	return appList, nil
+}
+
+type ClusterFilterFunction func(c *appv1.Cluster, distributionFunction sharding.DistributionFunction) bool

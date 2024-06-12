@@ -24,6 +24,7 @@ import (
 	"github.com/dcoppa/argo-cd/v2/controller"
 	"github.com/dcoppa/argo-cd/v2/controller/cache"
 	"github.com/dcoppa/argo-cd/v2/controller/metrics"
+	"github.com/dcoppa/argo-cd/v2/controller/sharding"
 	argocdclient "github.com/dcoppa/argo-cd/v2/pkg/apiclient"
 	"github.com/dcoppa/argo-cd/v2/pkg/apis/application/v1alpha1"
 	appclientset "github.com/dcoppa/argo-cd/v2/pkg/client/clientset/versioned"
@@ -440,5 +441,5 @@ func reconcileApplications(
 }
 
 func newLiveStateCache(argoDB db.ArgoDB, appInformer kubecache.SharedIndexInformer, settingsMgr *settings.SettingsManager, server *metrics.MetricsServer) cache.LiveStateCache {
-	return cache.NewLiveStateCache(argoDB, appInformer, settingsMgr, kubeutil.NewKubectl(), server, func(managedByApp map[string]bool, ref apiv1.ObjectReference) {}, nil, argo.NewResourceTracking())
+	return cache.NewLiveStateCache(argoDB, appInformer, settingsMgr, kubeutil.NewKubectl(), server, func(managedByApp map[string]bool, ref apiv1.ObjectReference) {}, &sharding.ClusterSharding{}, argo.NewResourceTracking())
 }
